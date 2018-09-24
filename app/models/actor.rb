@@ -1,5 +1,6 @@
 class Actor < ActiveRecord::Base
   has_many :characters
+<<<<<<< HEAD
   has_many :shows, through: :characters
 
   def full_name
@@ -11,4 +12,6 @@ class Actor < ActiveRecord::Base
       "#{character.name} - #{character.show.name}"
     end
   end
+=======
+>>>>>>> c414813395c2a42b1de5cd2ab7382587c7c1c176
 end
